@@ -1,0 +1,22 @@
+{
+  "name": "coffee-playground",
+  "description": "Be a hero. Use CoffeeScript",
+  "version": "0.0.0",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {},
+  "homepage": "",
+  "keywords": [],
+  "license": "MIT",
+  "main": "",
+  "repository": "Kikobeats/coffee-playground",
+  "scripts": {
+    "test": "sh test/test.sh",
+    "prepublish": "npm prune"
+  }
+}
