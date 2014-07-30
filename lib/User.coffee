@@ -1,26 +1,39 @@
-# -- Private -----------------
-# Defined before the class
+# More information:
+# http://coffeescriptcookbook.com/chapters/classes_and_objects/class-methods-and-instance-methods
 
-_count = 0
-_say_count = ->
-  console.log "Count from #{_count}!"
+# -- Private Method -------------------------
+# this is only accessible by this code
+HERO = 'Batman'
+SUPERSAY = ->
+  console.log "#{HERO} rulz!"
 
 class User
 
-  # -- Static ------------------
-  # Defined in the class with '@'
-  @say: -> console.log "I'm a user model, u know ?"
-  @variable : 3
+  # -- Static Class Method ------------------
+  # defined with '@'
+  @say: ->
+    console.log "I'm a user model, u know ?"
+  @variable: 3
 
-  # -- Public -------------------
+  # -- Private Class Method -----------------
+  # defined whit '_'
+  _surname: HERO
+  _say: ->
+    console.log "I'm #{@_surname}, but sssh!"
 
+  # -- Public Class Method -------------------
+  # defined without '@'
   constructor: (@name, @from = 'Valencia') ->
-    # class variables
+    # attributes declared in the constructor
+    # are accesibles (use @)
     @name = name
+
+    # For convention, if you can declare a private
+    # variable or method inside the class use '_'
+    @_original_name = "Paquito"
 
   # class method
   hello: ->
     console.log "Hello man, I'm #{@name} and I'm from #{@from}!"
-    # _say_count()
 
 exports = module.exports = User
