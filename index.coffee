@@ -1,32 +1,28 @@
 ####
-# CLASS
+# Dependencies
 ####
 
 User = require './lib/User'
 
-
 ####
-# MAIN
+# Main
 ####
 
 console.log "-- Static Methods --"
+console.log User
 User.say() # => I'm a user model, u know ?"
-console.log User.variable # => 3
+console.log User.VARIABLE # => 3
 
 console.log "\n-- Private Methods --"
-user = new User('Paco')
-console.log user._surname
-console.log user._say()
+user = new User
+console.log user
+# Note how '_surname' method is not printed when
+# you print user because is a private method
+console.log user._surname # => 'Batman'
+console.log user._say() # => 'I'm Batman, but sssh!'
 
 console.log "\n-- Class Methods --"
-console.log user.name
-console.log user.from
-user.hello()
-
-console.log "\n-- All Methods --"
-console.log "--- Class ---"
-console.log User
-console.log "--- Instance ---"
-console.log user
-
-
+user = new User('Pepe', 'Pepito', 'Alicante')
+# If you want yo call a function that dont need arguments
+# you can use 'do' reseve word
+do user.hello
