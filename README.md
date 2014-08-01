@@ -1,12 +1,14 @@
 # coffee_playground
 
-> Be a hero. Use CoffeeScript [![Build Status](https://secure.travis-ci.org/Kikobeats/coffee-playground.png?branch=master)](https://travis-ci.org/Kikobeats/coffee-playground)
+> Be a hero. Use CoffeeScript
 
-## Install
+run the index:
 
-## Usage
+```
+coffee index.coffee
+```
 
-## API
+and check the code in `lib/User.coffee`
 
 ## License
 
