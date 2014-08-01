@@ -1,6 +1,10 @@
-# coffee_playground
+![](http://seanjmacisaac.com/projects/design/coffee-script_logo-01.png)
+
+# CoffeeScript Playground
+
 
 > Be a hero. Use CoffeeScript
+
 
 run the index:
 
