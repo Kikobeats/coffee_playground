@@ -11,10 +11,8 @@ class User
   # -- Static Class Method ------------------
   # defined with '@'
   # Public static method
-  @say: -> console.log "I'm a user model, u know ?"
-  # Private static method
-  # Use case for represent a constant value
-  @VARIABLE: 3
+  @NAME: 'User'
+  @say: -> console.log "I'm a #{@NAME} model, u know ?"
 
   # -- Private Class Method -----------------
   # defined whit '_'
