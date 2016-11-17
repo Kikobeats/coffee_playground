@@ -1,6 +1,12 @@
 language: node_js
 node_js:
   - '0.10'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
 before_install:
-  - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'coffee-playground' ]; then cd .. && eval "mv $currentfolder coffee-playground" && cd coffee-playground; fi
+  - 'currentfolder=${PWD##*/}'
+  - >-
+    if [ "$currentfolder" != 'coffee-playground' ]; then cd .. && eval "mv
+    $currentfolder coffee-playground" && cd coffee-playground; fi
