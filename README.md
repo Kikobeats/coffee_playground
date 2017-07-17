@@ -2,6 +2,8 @@
 
 # CoffeeScript Playground
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/coffee_playground.svg)](https://greenkeeper.io/)
+
 
 > Be a hero. Use CoffeeScript
 
